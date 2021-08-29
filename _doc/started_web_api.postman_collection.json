@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "7f32e16c-b3ed-4e94-b299-8a5808be00b7",
+		"name": "started_web_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:2603/product/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\": \"The 2nd\",\r\n            \"id_model\": 101,\r\n            \"id_color\": 101,\r\n            \"cost\": 999999,\r\n            \"_date\": \"2021-08-29T16:32:47.151Z\",\r\n            \"discount\": 1000,\r\n            \"inused\": 1,\r\n            \"active\": 1\r\n            }"
+				},
+				"url": {
+					"raw": "127.0.0.1:2603/product/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2603",
+					"path": [
+						"product",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:2603/product/all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:2603/product/all",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "2603",
+					"path": [
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
